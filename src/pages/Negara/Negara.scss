@@ -1,0 +1,60 @@
+.card {
+    background-color: #f0f9ff; // Biru muda
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px; // Ukuran kartu
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  
+    &-header {
+      img {
+        width: 70%;
+        height: auto;
+        border-bottom: 4px solid #bee3f8; // Garis bawah biru muda
+      }
+    }
+  
+    &-body {
+      padding: 15px;
+  
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #1e3a8a; // Warna biru gelap untuk judul
+        margin-bottom: 10px;
+      }
+  
+      .card-text {
+        font-size: 1rem;
+        color: #4a5568; // Warna abu-abu
+        margin-bottom: 15px;
+      }
+    }
+  
+    &-actions {
+      padding: 10px 15px;
+      text-align: right;
+  
+      .btn {
+        background-color: #3b82f6; // Warna biru
+        color: #fff; // Teks putih
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #2563eb; // Warna biru gelap saat hover
+        }
+      }
+    }
+  }
+  
